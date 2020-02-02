@@ -1,0 +1,42 @@
+.main-title2 {
+   position: absolute;
+   color: #F9F1E9;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+}
+.skills-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  font-size: 17px;
+
+}
+.skill_heading {
+
+  border-radius: 20px;
+}
+.skills-details{
+  background-color: rgba(255,255,255,.1);
+  text-align: left;
+  border-radius: 30px;
+}
+
+.skills-section > :first-child{
+  width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-details > :first-child {
+      width: 200px;
+   }
+   .main-title2 .thin2 {
+      font-size: 17px;
+
+   }
+   .skills-details {
+    width: 200px; 
+   }
+
+}

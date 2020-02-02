@@ -1,0 +1,46 @@
+
+.main-title1 .thin1 {
+   font-weight: 0;
+   position: absolute;
+   color: #F9F1E9;
+   text-align: center;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.photo {
+  opacity: 0.7;
+  border-radius: 50px;
+  height: 200px;
+  width:200px;
+}
+.photo:hover {
+  opacity: 1;
+  transition: opacity .7s ease-in;
+}
+.looper {
+  font-size: 25px;
+}
+.description {
+  font-size: 17px;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin:15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-title1,  {
+      font-size: 3em;
+   }
+   .looper {
+     font-size: 17px;
+   }
+   .photo {
+     width: 150px;
+     height: 150px;
+     border-radius: 10px;
+   }
+}
