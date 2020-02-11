@@ -20,6 +20,7 @@ body{
 
 
 }
+
 .loader {
   position: fixed;
   top: 50%;
@@ -49,11 +50,7 @@ body{
    font-weight: 200;
 }
 
-@media only screen and (max-width: 768px) {
-   .demo .main-title {
-      font-size: 3em;
-   }
-}
+
 
 
 .example-appear {
@@ -63,4 +60,15 @@ body{
 .example-appear.example-appear-active {
   opacity: 1;
   transition: opacity .7s ease-in;
+}
+
+
+@media screen and (orientation: landscape) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+
+@media screen and (orientation: portrait) {
+
 }

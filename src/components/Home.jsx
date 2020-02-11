@@ -1,9 +1,7 @@
 import './assests/Home.css';
-
 import React, { useState, useEffect } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Typical from 'react-typical';
-
 import About from './About';
 import AppLoader from './AppLoader';
 import HeaderLinks from './HeaderLinks';
@@ -56,7 +54,7 @@ export default function Home(){
         <HeaderLinks isActive={isActive} handleClick={handleClick}/>
        <div className="content">
            <div id="large-header" className="large-header">
-              <canvas id="demo-canvas"></canvas>
+              <canvas className='space_effect' id="demo-canvas"></canvas>
               {(() => {
                 switch (isActive){
                   case 'HOME':

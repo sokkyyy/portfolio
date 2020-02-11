@@ -8,153 +8,70 @@ import flask from './assests/flask.png';
 import django from './assests/Django.png';
 import js from './assests/js.png';
 import node from './assests/node.jpg';
-
 import py from './assests/py.png';
 import html from './assests/html.png';
 import './assests/Skills.css';
-import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import {Collapse} from '@material-ui/core';
-import Container from '@material-ui/core/Container';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
+import { MDBListGroup, MDBListGroupItem, MDBContainer, MDBBadge } from "mdbreact";
 
-
-const useStyles = makeStyles(theme => ({
-
-  nested: {
-    paddingLeft: theme.spacing(5),
-  },
-  headings:{
-    fontWeight:'bold',
-  }
-}));
 
 export default function Skills(){
-  const classes = useStyles();
-  const [openFront, setopenFront] = React.useState(true);
-  const [openBack, setopenBack ] = useState(false)
 
-  const handleClick = () => {
-    setopenFront(!openFront);
-    setopenBack(!openBack);
-  };
-
-  const handleClickBack = () => {
-    setopenBack(!openBack);
-    setopenFront(!openFront);
-
-  };
   return(
     <div className='main-title2'>
-      <Container maxWidth='sm'>
-        <ReactCSSTransitionGroup
-          transitionName="example"
-          transitionAppear={true}
-          transitionAppearTimeout={10000}
+      <ReactCSSTransitionGroup
+        transitionName="example"
+        transitionAppear={true}
+        transitionAppearTimeout={10000}
         >
-        <div className='skills-section'>
-          <div className='skills-details'>
-            <List
-                  component="nav"
-                  aria-labelledby="nested-list-subheader"
-                  className='skills-details'
-                >
-                <div className='skill_heading'>
-                  <ListItem button onClick={handleClick} className={classes.headings} >
-                    <ListItemText primary="FRONT-END"  />
-                    {openFront ? <ExpandLess /> : <ExpandMore />}
-                  </ListItem>
-                </div>
-                  <Collapse in={openFront} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={html} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="HTML" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={css} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="CSS" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={js} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="JavaScript" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={angular} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="Angular" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={react} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="ReactJS" style={{fontSize:16}} />
-                      </ListItem>
-
-                    </List>
-                  </Collapse>
-                  <div className='skill_heading'>
-                    <ListItem button onClick={handleClickBack}>
-                      <ListItemText primary="BACK-END" />
-                      {openBack ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                  </div>
-
-                  <Collapse in={openBack} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={py} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="Python" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={flask} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="Flask" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={django} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="Django" style={{fontSize:16}} />
-                      </ListItem>
-
-                      <ListItem className={classes.nested}>
-                        <ListItemIcon>
-                          <img src={node} height={20} width={20} />
-                        </ListItemIcon>
-                        <ListItemText primary="NodeJS" style={{fontSize:16}} />
-                      </ListItem>
-
-                    </List>
-                  </Collapse>
-
-                </List>
+        <div className='skills_section'>
+          <div className='skill' style={{paddingTop:'10px'}}>
+            <span>HTML</span>
+            <img src={html} className='skill_icon' />
           </div>
+
+          <div className='skill'>
+            <span>CSS</span>
+            <img src={css} className='skill_icon' />
+          </div>
+
+          <div className='skill'>
+            <span>JavaScript</span>
+            <img src={js} className='skill_icon' />
+          </div>
+
+          <div className='skill'>
+            <span>Angular</span>
+            <img src={angular} className='skill_icon' />
+          </div>
+
+          <div className='skill'>
+            <span>ReactJS</span>
+            <img src={react} className='skill_icon' />
+          </div>
+
+          <div className='skill'>
+            <span>Python</span>
+            <img src={py} className='skill_icon' />
+          </div>
+
+          <div className='skill'>
+            <span>Flask</span>
+            <img src={flask} className='skill_icon' />
+          </div>
+
+          <div className='skill'>
+            <span>Django</span>
+            <img src={django} className='skill_icon' />
+          </div>
+
+          <div className='skill1'>
+            <span>NodeJS</span>
+            <img src={node} className='skill_icon' />
+          </div>
+
         </div>
-        </ReactCSSTransitionGroup>
-      </Container>
+      </ReactCSSTransitionGroup>
+
     </div>
   )
 }
