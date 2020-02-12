@@ -65,7 +65,9 @@
    .description {
      font-size: 12px;
    }
-
+   .flex-center1 {
+     display: none;
+   }
 }
 
 @media only screen and (orientation:portrait) and (max-height:550px) {
@@ -90,6 +92,9 @@
    .description {
      font-size: 12px;
    }
+   .white-text {
+     display: none;
+   }
 
 }
 @media only screen and (orientation:landscape) and (max-width:900px) {
@@ -113,5 +118,8 @@
    }
    .description {
      font-size: 13px;
+   }
+   .flex-center1 {
+     display: none;
    }
 }
