@@ -68,6 +68,30 @@
 
 }
 
+@media only screen and (orientation:portrait) and (max-height:550px) {
+  .main-title1 .thin1 {
+      font-size: 3em;
+   }
+   .looper {
+     font-size: 17px;
+     font-weight: bold;
+   }
+   .photo {
+     width: 150px;
+     height: 150px;
+   }
+   .about-details {
+     display: flex;
+     flex-direction: row-reverse;
+   }
+   .bio {
+     margin-top: 20px;
+   }
+   .description {
+     font-size: 12px;
+   }
+
+}
 @media only screen and (orientation:landscape) and (max-width:900px) {
    .main-title1 .thin1  {
      transform: translate(-60%, -50%);

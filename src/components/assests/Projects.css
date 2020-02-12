@@ -192,6 +192,53 @@
    }
 }
 
+
+@media only screen and (orientation:portrait) and (max-height:640px) {
+  .project_img {
+     height: 100px;
+     width: 150px;
+  }
+
+  .main-projects {
+    top:20%;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .project_card {
+    margin:5px;
+    width:150px;
+    height:70px;
+  }
+  .active_project_img{
+    height: 150px;
+    width: 340px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .active_description {
+    font-size: 10px;
+  }
+  .project_link {
+    font-size: 12px;
+  }
+  .close {
+    right: 60px;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+  .close_back {
+    right: 20px;
+    font-size: 15px;
+  }
+}
+
+
 @media only screen and (orientation:landscape) and (max-width:900px)  {
   .project_img {
      height: 80px;
