@@ -82,7 +82,7 @@
    }
    .about-details {
      display: flex;
-     flex-direction: row-reverse;
+     flex-direction: column;
    }
    .bio {
      margin-top: 20px;
