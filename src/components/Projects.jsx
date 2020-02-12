@@ -32,7 +32,7 @@ function Gallery(){
 
         <div>
           <h5 className='active_description title'>Technologies Used:</h5>
-          <ul className=''>
+          <ul className='active_description'>
             <li>Django</li>
             <li>Python</li>
             <li>JavaScript</li>
@@ -284,7 +284,7 @@ export default function Projects(){
 
           <MDBCard className='project_card'>
             <MDBView hover>
-              <div className='img_holder' onClick={handleClick(3)}>
+              <div className='img_holder' onClick={handleClick(3)} >
                 <MDBCardImage  src={vk} className="img-fluid project_img" waves />
               </div>
 
